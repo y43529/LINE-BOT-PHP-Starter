@@ -44,7 +44,7 @@ if (strpos($_msg, 'สอนไก่') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'ขอบคุณที่สอนไก่';
+    $arrPostData['messages'][0]['text'] = 'ขอบคุณที่สอนฉัน';
   }
 }else{
   if($isData >0){
@@ -58,7 +58,8 @@ if (strpos($_msg, 'สอนไก่') !== false) {
     $arrPostData = array();
     $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
     $arrPostData['messages'][0]['type'] = "text";
-    $arrPostData['messages'][0]['text'] = 'ก๊าบบ คุณสามารถสอนให้ฉลาดได้เพียงพิมพ์: สอนไก่[คำถาม|คำตอบ]';
+    // $arrPostData['messages'][0]['text'] = 'ไม่เข้าใจคุณเลย คุณสามารถสอนให้ฉลาดได้เพียงพิมพ์: สอนไก่[คำถาม|คำตอบ]';
+    $arrPostData['messages'][0]['text'] = 'ผมไม่เข้าใจคุณเลย รบกวนถามใหม่ค๊าบ';
   }
 }
 
